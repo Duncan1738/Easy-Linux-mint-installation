@@ -1,10 +1,10 @@
-# 🟢 Linux Mint Installation Guide
+# Linux Mint Installation Guide
 
 A complete step-by-step guide to install **Linux Mint** (Cinnamon, MATE, or Xfce editions) on your computer.
 
 ---
 
-## 🖥️ System Requirements
+## System Requirements
 
 | Component    | Minimum            | Recommended        |
 |--------------|--------------------|--------------------|
@@ -14,7 +14,7 @@ A complete step-by-step guide to install **Linux Mint** (Cinnamon, MATE, or Xfce
 
 ---
 
-## 📥 1. Download Linux Mint ISO
+## 1. Download Linux Mint ISO
 
 - Visit the official [Linux Mint Download Page](https://linuxmint.com/download.php)
 - Choose:
@@ -24,98 +24,81 @@ A complete step-by-step guide to install **Linux Mint** (Cinnamon, MATE, or Xfce
 
 ---
 
-## 💽 2. Create Bootable USB
+## 2. Create Bootable USB
 
 - Use one of the following tools:
   - [Rufus](https://rufus.ie/) – Windows
   - [balenaEtcher](https://etcher.io/) – Windows/macOS/Linux
   - [Ventoy](https://www.ventoy.net/) – Multi-ISO USB boot
-  - Or the `dd` command on Linux (advanced)
+  - Or use the `dd` command on Linux
 
-⚠️ **All data on the USB will be erased.**
+Note: All data on the USB will be erased.
 
 ---
 
-## 🚀 3. Boot from USB
+## 3. Boot from USB
 
 1. Insert the USB drive into your computer
-2. Reboot and press `F2`, `F10`, `DEL`, or `ESC` to open the boot menu (depends on your system)
-3. Choose the USB drive to boot from
+2. Reboot and press `F2`, `F10`, `DEL`, or `ESC` to open the boot menu
+3. Choose the USB drive
 4. Select **Start Linux Mint**
 
 ---
 
-## 🧪 4. Try Linux Mint (Live Mode)
+## 4. Try Linux Mint (Live Mode)
 
-- Test internet, display, sound, touchpad, etc.
-- If all looks good, double-click **Install Linux Mint**
-
----
-
-## 🛠️ 5. Install Linux Mint
-
-### 🌍 Choose Language and Region
-- Pick your preferred language and keyboard layout
-
-### 🌐 Connect to Internet
-- Use Wi-Fi or Ethernet for online package installation
-
-### 💾 Installation Type
-- Choose one:
-  - **Erase disk and install Linux Mint** – for clean install (⚠️ wipes disk)
-  - **Install alongside existing OS** – for dual boot
-  - **Something else** – for manual partitioning (advanced)
-
-### 📁 Auto Partition Layout
-When using "Erase disk":
-- `/` (root) – OS and files
-- `swap` – optional, for RAM overflow
-- `/home` – optional, for user files
+- Test your hardware: internet, display, sound, touchpad
+- If everything works, double-click **Install Linux Mint**
 
 ---
 
-## 🧾 6. Final Setup
+## 5. Install Linux Mint
 
-- Set your **timezone**
-- Create a **username and password**
+### Language and Region
+- Choose your preferred language and keyboard layout
+
+### Network
+- Connect to Wi-Fi or Ethernet
+
+### Installation Type
+- Choose one of the following:
+  - **Erase disk and install Linux Mint** (wipes entire disk)
+  - **Install alongside existing OS** (dual boot)
+  - **Something else** (manual partitioning)
+
+### Automatic Partitioning
+If "Erase disk" is selected:
+- `/` (root) for OS and files
+- `swap` for memory overflow (optional)
+- `/home` for personal files (optional)
+
+---
+
+## 6. Final Setup
+
+- Set your timezone
+- Create a username and password
 - Review settings and click **Install Now**
 
 ---
 
-## 🔁 7. Restart
+## 7. Restart
 
 - When prompted, click **Restart Now**
 - Remove USB when asked
 
 ---
 
-## ✅ 8. First Boot
+## 8. First Boot
 
 - Login using your credentials
-- Welcome to **Linux Mint!**
+- Linux Mint is ready to use
 
 ---
 
-## 🧰 9. Post-Installation Checklist
+## 9. Post-Installation Checklist
 
-### 🔄 Update System
+### Update the System
 ```bash
 sudo apt update && sudo apt upgrade -y
-
-##
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
