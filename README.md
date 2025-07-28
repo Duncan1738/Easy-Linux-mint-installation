@@ -96,12 +96,118 @@ If "Erase disk" is selected:
 
 ---
 
-## 9. Post-Installation Checklist
+# Post-Installation Guide for Linux Mint
 
-### Update the System
+This guide provides essential commands and setup steps to configure your Linux Mint system after installation. These commands update the system, enhance usability, and install useful software packages.
+
+---
+
+## 1. Update and Upgrade the System
+
 ```bash
 sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
 ```
+
+---
+
+## 2. Install Essential Tools
+
+```bash
+sudo apt install -y build-essential curl wget git vim gnome-tweaks ufw
+```
+
+---
+
+## 3. Enable the Firewall
+
+```bash
+sudo ufw enable
+sudo ufw status verbose
+```
+
+---
+
+## 4. Install Multimedia Codecs
+
+```bash
+sudo apt install -y ubuntu-restricted-extras
+```
+
+---
+
+## 5. Install Flatpak and Enable Flathub
+
+```bash
+sudo apt install -y flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+---
+
+## 6. Optional: Install GNOME Software Center with Flatpak Support
+
+```bash
+sudo apt install -y gnome-software gnome-software-plugin-flatpak
+```
+
+---
+
+## 7. Install Useful Applications
+
+```bash
+sudo apt install -y vlc gparted neofetch htop synaptic
+```
+
+---
+
+## 8. Install Timeshift (for backups)
+
+```bash
+sudo apt install -y timeshift
+```
+
+---
+
+## 9. System Information
+
+Display system info using Neofetch:
+
+```bash
+neofetch
+```
+
+---
+
+## 10. Reboot the System
+
+```bash
+sudo reboot
+```
+
+---
+
+## Optional: Additional Tools
+
+### Install Microsoft Fonts
+
+```bash
+sudo apt install -y ttf-mscorefonts-installer
+```
+
+### Enable Snap Support (if needed)
+
+```bash
+sudo rm /etc/apt/preferences.d/nosnap.pref
+sudo apt update
+sudo apt install -y snapd
+```
+
+---
+
+## System Ready
+
+You have now completed the essential post-installation steps for Linux Mint. Your system is up to date, secure, and ready for development or general use.
 ---
 ## Install Essential Packages
 
