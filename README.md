@@ -99,7 +99,7 @@ If "Erase disk" is selected:
 
 # Post-Installation Guide for Linux Mint
 
-This guide provides essential commands and setup steps to configure your Linux Mint system after installation. Each command is explained for clarity.
+This guide provides essential commands and setup steps to configure your Linux Mint system. Each command is explained for clarity.
 
 ---
 
