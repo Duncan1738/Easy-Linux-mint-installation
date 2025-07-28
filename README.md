@@ -96,9 +96,10 @@ If "Erase disk" is selected:
 
 ---
 
+
 # Post-Installation Guide for Linux Mint
 
-This guide provides essential commands and setup steps to configure your Linux Mint system after installation. These commands update the system, enhance usability, and install useful software packages.
+This guide provides essential commands and setup steps to configure your Linux Mint system after installation. Each command is explained for clarity.
 
 ---
 
@@ -106,8 +107,14 @@ This guide provides essential commands and setup steps to configure your Linux M
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
+- `apt update`: Refreshes package lists from repositories.
+- `apt upgrade -y`: Installs updated versions of installed packages.
+
+```bash
 sudo apt autoremove -y
 ```
+- Removes unused packages no longer needed.
 
 ---
 
@@ -116,6 +123,12 @@ sudo apt autoremove -y
 ```bash
 sudo apt install -y build-essential curl wget git vim gnome-tweaks ufw
 ```
+- `build-essential`: Compiler and libraries for building packages.
+- `curl`, `wget`: Tools to download files from the internet.
+- `git`: Version control system.
+- `vim`: Command-line text editor.
+- `gnome-tweaks`: GUI for GNOME customization.
+- `ufw`: Simple firewall configuration tool.
 
 ---
 
@@ -123,8 +136,13 @@ sudo apt install -y build-essential curl wget git vim gnome-tweaks ufw
 
 ```bash
 sudo ufw enable
+```
+- Activates the system firewall.
+
+```bash
 sudo ufw status verbose
 ```
+- Shows detailed status of firewall rules.
 
 ---
 
@@ -133,6 +151,7 @@ sudo ufw status verbose
 ```bash
 sudo apt install -y ubuntu-restricted-extras
 ```
+- Installs codecs for MP3, DVD, and proprietary formats.
 
 ---
 
@@ -140,8 +159,13 @@ sudo apt install -y ubuntu-restricted-extras
 
 ```bash
 sudo apt install -y flatpak
+```
+- Installs Flatpak, a package system for apps.
+
+```bash
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
+- Adds the Flathub repository to your Flatpak sources.
 
 ---
 
@@ -150,6 +174,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 ```bash
 sudo apt install -y gnome-software gnome-software-plugin-flatpak
 ```
+- Installs a GUI app store with Flatpak support.
 
 ---
 
@@ -158,6 +183,11 @@ sudo apt install -y gnome-software gnome-software-plugin-flatpak
 ```bash
 sudo apt install -y vlc gparted neofetch htop synaptic
 ```
+- `vlc`: Versatile media player.
+- `gparted`: Partition management tool.
+- `neofetch`: Displays system info in terminal.
+- `htop`: Interactive process monitor.
+- `synaptic`: GUI package manager.
 
 ---
 
@@ -166,16 +196,16 @@ sudo apt install -y vlc gparted neofetch htop synaptic
 ```bash
 sudo apt install -y timeshift
 ```
+- Tool for creating and restoring system snapshots.
 
 ---
 
 ## 9. System Information
 
-Display system info using Neofetch:
-
 ```bash
 neofetch
 ```
+- Displays your OS, kernel, RAM, CPU, etc.
 
 ---
 
@@ -184,6 +214,7 @@ neofetch
 ```bash
 sudo reboot
 ```
+- Reboots the computer to apply changes.
 
 ---
 
@@ -194,6 +225,9 @@ sudo reboot
 ```bash
 sudo apt install -y ttf-mscorefonts-installer
 ```
+- Installs fonts like Arial, Times New Roman, etc.
+
+---
 
 ### Enable Snap Support (if needed)
 
@@ -202,18 +236,14 @@ sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt update
 sudo apt install -y snapd
 ```
+- Enables Snap package support which is disabled by default in Mint.
 
 ---
 
 ## System Ready
 
 You have now completed the essential post-installation steps for Linux Mint. Your system is up to date, secure, and ready for development or general use.
----
-## Install Essential Packages
 
-```bash
-sudo apt install vlc gparted synaptic git curl -y
-```
 ## Customize Appearance
 - Themes: https://www.gnome-look.org/
 - Cinnamon add-ons: https://cinnamon-spices.linuxmint.com/
