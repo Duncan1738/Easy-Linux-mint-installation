@@ -1,7 +1,7 @@
 # Linux Mint Installation Guide
 
 A complete step-by-step guide to install **Linux Mint** (Cinnamon, MATE, or Xfce editions) on your computer.
-
+https://itsfoss.com/content/images/2023/03/install-linux-mint.webp
 ---
 
 ## System Requirements
