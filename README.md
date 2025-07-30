@@ -252,5 +252,6 @@ You have now completed the essential post-installation steps for Linux Mint. You
 - https://forums.linuxmint.com/
 - https://community.linuxmint.com/
 
-**For Linux beginners to confidently install Mint.** - For the love of Linux — Welcome to the open-source journey!
+For Linux beginners to confidently install Mint.  
+**— For the love of Linux: Welcome to the open-source journey!**
 
